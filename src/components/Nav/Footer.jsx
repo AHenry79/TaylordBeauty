@@ -1,4 +1,6 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <h3>SOCIALS</h3>
@@ -9,7 +11,7 @@ function Footer() {
           className="insta-logo"
         />
       </a>
-      <p>Copyright © 2024 Taylor'd Beauty - All Rights Reserved.</p>
+      <p>Copyright © {currentYear} Taylor'd Beauty - All Rights Reserved.</p>
     </footer>
   );
 }

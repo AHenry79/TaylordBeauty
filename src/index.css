@@ -55,6 +55,10 @@ body {
 .insta-logo {
   height: 50px;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 /* End of Nav */
 
 /* Start of Slides */
@@ -146,3 +150,179 @@ body {
   font-size: 16px;
 }
 /* End of Home */
+
+/* Contact page */
+.contact-wrapper {
+  background-color: #55574d;
+  margin-top: 8.5rem;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+.contact {
+  font-family: "Merriweather", serif;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+input,
+.message {
+  background-color: #55574d;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+}
+input:hover,
+.message:hover {
+  background-color: #4c4e45;
+}
+.message {
+  height: 100px;
+}
+.submit-button {
+  border: 2px solid white;
+  background-color: #55574d;
+  color: white;
+  font-family: "Merriweather", serif;
+  padding: 20px;
+  width: 120px;
+  font-size: 18px;
+  margin: 30px auto 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+.submit-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.contact-page-wrapper {
+  background-color: #55574d;
+}
+.contact-info-wrapper {
+  background-color: #55574d;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+.location-header,
+.location-info {
+  font-family: "Merriweather", serif;
+}
+.location-header {
+  font-size: 32px;
+}
+.location-info {
+  font-size: 18px;
+  line-height: 50px;
+  width: 90%;
+  margin: 20px auto;
+}
+.mobile {
+  font-size: 14px;
+  line-height: 35px;
+  width: 80%;
+  margin: 0 auto 50px auto;
+}
+.business {
+  margin-bottom: 40px;
+}
+.hours-title {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+}
+li {
+  list-style: none;
+}
+.hours-table {
+  display: flex;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 35px;
+}
+.warning {
+  font-family: "Merriweather", serif;
+  width: 90%;
+  margin: 30px auto 50px auto;
+  font-size: 18px;
+}
+textarea {
+  resize: vertical;
+}
+.submit-button {
+  margin-bottom: 50px;
+}
+.err {
+  color: #e5bab8;
+  font-size: 18px;
+  margin-left: 20px;
+}
+/* End of contact page */
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+  .nav {
+    height: 6rem;
+    background-color: black;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+    width: 75%;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+  }
+  .lists-nav:hover {
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+  .logo {
+    margin: 0.7rem 0 auto 2rem;
+  }
+  .logo:hover {
+    cursor: pointer;
+  }
+  .contact-info-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+  .days,
+  .times {
+    flex-direction: column;
+  }
+  .contact-wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .contact {
+    text-align: left;
+  }
+  form {
+    width: 100%;
+  }
+  .hours-table {
+    justify-content: center;
+  }
+}
+/* End of Desktop */
