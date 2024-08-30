@@ -290,7 +290,7 @@ textarea {
   margin: 0 auto;
 }
 .about-text {
-  margin: 5rem auto;
+  margin: 1rem auto 5rem auto;
   text-align: left;
   color: white;
   font-family: "Merriweather", serif;
@@ -306,9 +306,17 @@ textarea {
   background-color: #55574d;
   font-family: "Merriweather", serif;
 }
-.service-p {
+.service-p,
+.service-p-makeup,
+.service-h3,
+.service-h3-makeup {
   width: 90%;
   margin: 0 auto;
+}
+.service-h3,
+.service-h3-makeup {
+  margin: 1rem auto;
+  font-size: 28px;
 }
 .service-list {
   background-color: black;
@@ -355,14 +363,26 @@ textarea {
   color: white;
   font-family: "Merriweather", serif;
   border: 2px solid white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   transition: background-color 0.5s ease;
   transition: color 0.5s ease;
+  font-size: 18px;
+  margin-top: 2rem;
 }
 .book-button:hover {
   color: black;
   background-color: white;
+}
+.facial-wax-image {
+  height: 200px;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  margin: 2rem auto;
 }
 /* End of Services Page */
 
@@ -431,6 +451,9 @@ textarea {
     height: 600px;
     width: 100%;
   }
+  .about-p {
+    font-size: 18px;
+  }
   .about-text {
     width: 30%;
     margin: 5rem 5rem 5rem 0;
@@ -457,6 +480,42 @@ textarea {
   .booking {
     width: 25%;
     margin-right: 5rem;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .service-info-container {
+    text-align: left;
+  }
+  .service-image-container,
+  .service-info-container {
+    width: 100%;
+    font-size: 20px;
+    margin: 2rem auto;
+  }
+  .service-p {
+    width: 80%;
+    margin: 0;
+  }
+  .facial-wax-image {
+    height: 400px;
+  }
+  .service-h3 {
+    font-size: 28px;
+    width: 60%;
+  }
+  .service-h3-face-wax {
+    font-size: 28px;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  .right {
+    text-align: right;
+  }
+  .rightside {
+    float: right;
   }
 }
 /* End of Desktop */
