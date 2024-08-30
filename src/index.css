@@ -350,6 +350,20 @@ textarea {
 #brow-tinting {
   background-color: black;
 }
+.book-button {
+  background: none;
+  color: white;
+  font-family: "Merriweather", serif;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.book-button:hover {
+  color: black;
+  background-color: white;
+}
 /* End of Services Page */
 
 /* Desktop */
